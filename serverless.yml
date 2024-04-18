@@ -1,13 +1,11 @@
 org: refdudu
-app: puppeteer
-service: puppeteer
+app: aws-lambda
+service: aws-lambda
 frameworkVersion: '3'
-plugins:
-  - serverless-dotenv-plugin
 
 provider:
   name: aws
-  # runtime: nodejs14.x
+  runtime: nodejs14.x
   memorySize: 1024
   timeout: 60
 
