@@ -10,7 +10,8 @@
     "chrome-aws-lambda": "^10.1.0",
     "jsdom": "21.1.2",
     "pdf-lib": "^1.17.1",
-    "puppeteer-core": "^10.4.0"
+    "puppeteer-core": "^10.4.0",
+    "serverless-dotenv-plugin": "^6.0.0"
   },
   "engines": {
     "node": "14.x"
