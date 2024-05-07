@@ -12,5 +12,5 @@ provider:
 functions:
   screenshot:
     handler: src/screenshot.handler
-  create-pdf:
-    handler: src/create-pdf.handler
+  create-document-pdf:
+    handler: src/create-document-pdf.handler
