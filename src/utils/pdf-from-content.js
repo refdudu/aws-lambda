@@ -82,8 +82,7 @@ exports.PdfFromContent = async (page, content, waterMark) => {
       files.push(Buffer.from(fullContent));
     }
   }
-  const finalPdf = await MergePdf({ files });
-  return finalPdf;
+  return MergePdf({ files });
 };
 async function MergePdf({ files }) {
   const mergedPdf = await PDFDocument.create();

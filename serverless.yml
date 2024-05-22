@@ -8,9 +8,18 @@ provider:
   runtime: nodejs14.x
   memorySize: 1024
   timeout: 60
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - s3:GetObject
+        - s3:PutObject
+      Resource:
+        - "arn:aws:s3:::*"
 
 functions:
   screenshot:
     handler: src/screenshot.handler
   create-document-pdf:
     handler: src/create-document-pdf.handler
+    environment:
+      bucket: storage-2024-05-22
